@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<req:UpdateServiceRequest 
+xmlns:req="http://org.example/updateServiceRequest" 
+xmlns:tns="http://org.example/service" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://org.example/updateServiceRequest updateServiceRequest.xsd ">
+
+  <req:docSFreeTime>2021-12-31T12:00:00</req:docSFreeTime>
+  
+</req:UpdateServiceRequest>

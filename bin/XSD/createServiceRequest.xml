@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<req:CreateServiceRequest 
+xmlns:req="http://org.example/createServiceRequest" 
+xmlns:tns="http://org.example/service" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://org.example/createServiceRequest createServiceRequest.xsd ">
+
+  <req:serviceID>1</req:serviceID>
+  <req:docName>req:docName</req:docName>
+  <req:serviceName>req:serviceName</req:serviceName>
+  <req:docSFreeTime>2023-12-31T12:00:00</req:docSFreeTime>
+  
+</req:CreateServiceRequest>

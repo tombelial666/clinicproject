@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://org.example/getDocsServiceRequest" 
+xmlns:req="http://org.example/getDocsServiceRequest" 
+xmlns:tns="http://org.example/service"
+elementFormDefault="qualified">
+
+  <import namespace="http://org.example/service" schemaLocation="Service.xsd"/>
+  
+<element name="GetDocsServiceRequest"
+             type="req:GetDocsServiceRequest"/>
+
+    <complexType name="GetDocsServiceRequest">
+     <sequence>
+        <element name="docName" type="tns:rDocName"/>
+      </sequence>
+    </complexType>
+    
+    </schema>

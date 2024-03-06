@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Service xmlns:tns="http://org.example/service" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://org.example/service Service.xsd ">
+  <tns:serviceID>1</tns:serviceID>
+  <tns:docName>tns:docName</tns:docName>
+  <tns:medicalSpecaiality>tns:medicalSpecaiality</tns:medicalSpecaiality>
+  <tns:serviceName>tns:serviceName</tns:serviceName>
+  <tns:price>0.0</tns:price>
+  <tns:appointmentTime>2020-12-31T12:00:00</tns:appointmentTime>
+  <tns:orderDone>true</tns:orderDone>
+  <tns:whyNotDone>tns:whyNotDone</tns:whyNotDone>
+  <tns:orderID>0</tns:orderID>
+  <tns:docSFreeTime>2021-12-31T12:00:00</tns:docSFreeTime>
+  <tns:clientID>0</tns:clientID>
+  <tns:responseStatus>SUCCESS</tns:responseStatus>
+  </tns:Service>

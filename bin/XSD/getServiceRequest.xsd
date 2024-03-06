@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://org.example/getServiceRequest" 
+xmlns:req="http://org.example/getServiceRequest" 
+xmlns:tns="http://org.example/service"
+elementFormDefault="qualified">
+
+  <import namespace="http://org.example/service" schemaLocation="Service.xsd"/>
+
+
+<element name="GetServiceRequest"
+             type="req:GetServiceRequest"/>
+
+    <complexType name="GetServiceRequest">
+        <sequence>
+            <element name="serviceID" type="tns:rServiceID"/>
+            <element name="responseStatus" type="tns:rResponseStatus"/>
+        </sequence>
+    </complexType>
+    
+    </schema>
+    

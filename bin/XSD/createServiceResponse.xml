@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resp:CreateServiceResponse xmlns:resp="http://org.example/createServiceResponse" xmlns:tns="http://org.example/service" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://org.example/createServiceResponse createServiceResponse.xsd ">
+  <resp:responseStatus>SUCCESS</resp:responseStatus>
+  <resp:appointmentTime>2021-12-31T12:00:00</resp:appointmentTime>
+  <resp:roomNumber>1</resp:roomNumber>
+  <resp:serviceID>1</resp:serviceID>
+  <resp:docName>resp:docName</resp:docName>
+  <resp:price>999999.19</resp:price>
+  <resp:orderID>0</resp:orderID>
+</resp:CreateServiceResponse>

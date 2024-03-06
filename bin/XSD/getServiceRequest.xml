@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<req:GetServiceRequest 
+
+xmlns:req="http://org.example/getServiceRequest" 
+xmlns:tns="http://org.example/service" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://org.example/getServiceRequest getServiceRequest.xsd ">
+
+  <req:serviceID>1</req:serviceID>
+  <req:responseStatus>SUCCESS</req:responseStatus>
+  
+</req:GetServiceRequest>

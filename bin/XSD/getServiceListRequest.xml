@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<req:GetServiceListRequest 
+
+xmlns:req="http://org.example/getServiceListRequest" 
+xmlns:tns="http://org.example/service" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://org.example/getServiceListRequest getServiceListRequest.xsd ">
+
+  <req:serviceID>1</req:serviceID>
+  <req:docName>req:docName</req:docName>
+  <req:serviceName>req:serviceName</req:serviceName>
+  <req:price>0.0</req:price>
+  <req:docSFreeTime>2021-12-31T12:00:00</req:docSFreeTime>
+  <req:roomNumber>0</req:roomNumber>
+  <req:medicalSpeciality>req:medicalSpeciality</req:medicalSpeciality>
+  <req:responseStatus>SUCCESS</req:responseStatus>
+
+</req:GetServiceListRequest>

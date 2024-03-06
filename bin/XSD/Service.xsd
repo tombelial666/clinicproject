@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://org.example/service"
+        xmlns:tns="http://org.example/service" elementFormDefault="qualified">
+
+    <element name="Service"
+             type="tns:Service"/>
+
+    <complexType name="Service">
+        <sequence>
+            <element name="serviceID" type="tns:rServiceID" maxOccurs="1"/>
+            <element name="docName" type="tns:rDocName" maxOccurs="1"/>
+            <element name="medicalSpecaiality" type="tns:rMedicalSpeciality"/>
+            <element name="serviceName" type="tns:rServiceName" maxOccurs="1"/>
+            <element name="price" type="tns:rPrice" maxOccurs="1"/>
+            <element name="roomNumber" type="tns:rRoomNumber" minOccurs="0"/>
+            <element name="appointmentTime" type="tns:rAppointmentTime" maxOccurs="1"/>
+            <element name="orderDone" type="boolean" maxOccurs="1"/>
+            <element name="whyNotDone" type="tns:rWhyNotDone" maxOccurs="1"/>
+            <element name="orderID" type="tns:rOrderID" maxOccurs="1"/>
+            <element name="docSFreeTime" type="tns:rDocsFreeTime" maxOccurs="1"/>
+            <element name="responseStatus" type="tns:rResponseStatus"/>
+        </sequence>
+    </complexType>
+
+
+    <simpleType name="rServiceID">
+        <restriction base="int">
+            <pattern value="[1-9]{1,6}"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="rDocName">
+        <restriction base="string">
+            <pattern value="[а-яА-яa-zA-Z|s]+{1,128}"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="rMedicalSpeciality">
+        <restriction base="string">
+            <pattern value="[а-яА-яa-zA-Z|s]+{1,256}"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="rServiceName">
+        <restriction base="string">
+            <pattern value="[а-яА-яa-zA-Z|s]+{1,256}"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="rPrice">
+        <restriction base="decimal">
+            <minInclusive value="0"/>
+            <maxInclusive value="999999.99"/>
+            <pattern value="[0-9]+(\.[0-9]{1,2})?"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="rRoomNumber">
+        <restriction base="int">
+            <pattern value="[0-9]{1,6}"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="rAppointmentTime">
+        <restriction base="dateTime">
+            <minInclusive value="2014-01-01T00:00:00"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="rWhyNotDone">
+        <restriction base="string">
+            <pattern value="[а-яА-яa-zA-Z|s]+{1,128}"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="rOrderID">
+        <restriction base="int">
+            <pattern value="[0-9]{1,15}"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="rDocsFreeTime">
+        <restriction base="dateTime">
+            <minInclusive value="2014-01-01T00:00:00"/>
+        </restriction>
+    </simpleType>
+    
+    <simpleType name="rResponseStatus">
+		<restriction base="string">
+			<maxLength value="50"/>
+			<whiteSpace value="collapse"/>
+			<enumeration value="SUCCESS"/>
+			<enumeration value="ERROR"/>
+		</restriction>
+	</simpleType>
+
+</schema>

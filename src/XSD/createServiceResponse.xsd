@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schema 
+
+xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://org.example/createServiceResponse" 
+xmlns:resp="http://org.example/createServiceResponse" 
+xmlns:tns="http://org.example/service"
+elementFormDefault="qualified">
+
+  <import namespace="http://org.example/service" schemaLocation="Service.xsd"/>
+
+<element name="CreateServiceResponse"
+	     type="resp:CreateServiceResponse"/>
+
+<complexType name="CreateServiceResponse">
+
+		<sequence>
+		<element name="responseStatus" type="tns:rResponseStatus"/>
+		<element name="appointmentTime" type="tns:rAppointmentTime"/>
+		<element name="roomNumber" type="tns:rRoomNumber"/>
+        <element name="serviceID" type="tns:rServiceID"/>
+        <element name="docName" type="tns:rDocName"/>
+        <element name="price" type="tns:rPrice"/>
+        <element name="orderID" type="tns:rOrderID"/>
+        </sequence>
+        
+</complexType>
+
+</schema>

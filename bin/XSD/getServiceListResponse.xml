@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resp:getServiceResponse 
+
+xmlns:resp="http://org.example/getServiceResponse" 
+xmlns:tns="http://org.example/service" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://org.example/getServiceResponse getServiceResponse.xsd ">
+
+  <resp:serviceID>5</resp:serviceID>
+  <resp:docName>resp:docName</resp:docName>
+  <resp:medicalSpecaiality>resp:medicalSpecaiality</resp:medicalSpecaiality>
+  <resp:serviceName>resp:serviceName</resp:serviceName>
+  <resp:price>0.0</resp:price>
+  <resp:docSFreeTime>2021-12-31T12:00:00</resp:docSFreeTime>
+  <resp:responseStatus>SUCCESS</resp:responseStatus>
+  
+</resp:getServiceResponse>

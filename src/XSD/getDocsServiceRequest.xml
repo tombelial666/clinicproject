@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<req:GetDocsServiceRequest 
+xmlns:req="http://org.example/getDocsServiceRequest" 
+xmlns:tns="http://org.example/service" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://org.example/getDocsServiceRequest getDocsServiceRequest.xsd ">
+  <req:docName>req:docName</req:docName>
+</req:GetDocsServiceRequest>
